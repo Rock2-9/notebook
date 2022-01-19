@@ -24,6 +24,17 @@ const NoteState = (props) => {
   ];
   const [notes, setNotes] = useState(notesInitial);
 
+  const addNote = (title, description, tag) => {
+    const note = {
+      title: title,
+      description: description,
+      tag: tag,
+      date: {
+        $date: "2022-01-05T08:15:35.653Z",
+      },
+    };
+    setNotes(notes.concate(note));
+  };
   return (
     <NoteContext.Provider value={{ notes, setNotes }}>
       {props.children}

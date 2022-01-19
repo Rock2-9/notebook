@@ -7,7 +7,7 @@ function Note() {
   const { notes, setNotes } = context;
 
   return (
-    <div className="container my-3">
+    <div className="container mx-3">
       <h2>Your Notes</h2>
       {notes.map(function (note) {
         return <Newsitem note={note} />;
