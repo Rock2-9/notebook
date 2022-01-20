@@ -12,7 +12,7 @@ router.post(
   [
     body("name", "Enter a Valid name").isLength({ min: 3 }),
     body("email", "Enter a Valid email").isEmail(),
-    body("password", "Password must be of % character").isLength({ min: 5 }),
+    body("password", "Password must be of 5 character").isLength({ min: 5 }),
   ],
   async (req, res) => {
     const errors = validationResult(req);

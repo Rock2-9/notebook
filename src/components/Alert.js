@@ -2,7 +2,7 @@ import React from "react";
 
 function Alert(props) {
   return (
-    <div class="alert alert-success" role="alert">
+    <div className="alert alert-success" role="alert">
       {props.message}
     </div>
   );
