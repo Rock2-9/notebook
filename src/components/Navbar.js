@@ -49,6 +49,22 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
+          <Link
+            class="btn btn-primary  mx-2"
+            role="button"
+            aria-disabled="true"
+            to="/Login"
+          >
+            Login
+          </Link>
+          <Link
+            class="btn btn-primary mx-2"
+            role="button"
+            aria-disabled="true"
+            to="/SignUp"
+          >
+            SignUp
+          </Link>
         </div>
       </nav>
     </div>
