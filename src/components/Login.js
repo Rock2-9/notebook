@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const host = "http://localhost:5000";
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-
+  const history = useNavigate();
   const handleClick = async (e) => {
     e.preventDefault();
     const response = await fetch(`${host}/api/auth/login`, {
@@ -19,6 +20,7 @@ function Login() {
     });
     const json = await response.json();
     console.log(json);
+    history("/");
   };
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });

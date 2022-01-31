@@ -1,5 +1,6 @@
 import NoteContext from "./noteContext";
 import { useState } from "react";
+import Alert from "../../components/Alert";
 
 const NoteState = (props) => {
   const host = "http://localhost:5000";
@@ -57,6 +58,9 @@ const NoteState = (props) => {
       return note._id !== id;
     });
     setNotes(newNotes);
+    setTimeout(() => {
+      <Alert message="Note has been deleted" />;
+    }, 1000);
   };
   //Edit note
   const editNote = async (id, title, description, tag) => {

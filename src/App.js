@@ -11,18 +11,19 @@ import SignUp from "./components/SignUp";
 
 function App() {
   return (
-    <NoteState>
-      <BrowserRouter>
-        <Navbar />
-        <Alert message="Note has been fetched second times" />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="SignUp" element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
-    </NoteState>
+    <div className="container">
+      <NoteState>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="Login" element={<Login />} />
+            <Route path="SignUp" element={<SignUp />} />
+          </Routes>
+        </BrowserRouter>
+      </NoteState>
+    </div>
   );
 }
 

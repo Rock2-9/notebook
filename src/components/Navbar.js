@@ -50,7 +50,7 @@ export default function Navbar() {
             </ul>
           </div>
           <Link
-            class="btn btn-primary  mx-2"
+            className="btn btn-primary  mx-2"
             role="button"
             aria-disabled="true"
             to="/Login"
@@ -58,7 +58,7 @@ export default function Navbar() {
             Login
           </Link>
           <Link
-            class="btn btn-primary mx-2"
+            className="btn btn-primary mx-2"
             role="button"
             aria-disabled="true"
             to="/SignUp"
